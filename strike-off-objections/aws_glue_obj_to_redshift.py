@@ -18,7 +18,7 @@ database = args['database']
 job_connection = args['job_connection']
 
 dbtable_attachments = "strike_off_objection_attachment"
-dbtable_objections = "strike_off_objection" 
+dbtable_objections = "strike_off_objection"
 
 # Dont Use Bookmarks with this ETL as aws does not upsert instead we have to delete * from table first
 preactions_attachments = "delete from strike_off_objection_attachment;"
