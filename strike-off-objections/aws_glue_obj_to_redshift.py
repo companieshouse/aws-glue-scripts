@@ -78,12 +78,12 @@ df_obj_mapped = ApplyMapping.apply(frame = root_df, mappings =
     ("`created_by.email`", "string", "created_by_email", "string"),
     ("`created_by.full_name`", "string", "created_by_full_name", "string"),
     ("`created_by.share_identity`", "boolean", "created_by_share_identity", "boolean"),
-    ("`status_changed_on.$date`", "string", "status_changed_on", "timestamp"),
     ("`company_number`", "string", "company_number", "string"),
     ("`status`", "string", "status", "string"),
+    ("`status_changed_on.$date`", "string", "status_changed_on", "timestamp"),
+    ("`reason`", "string", "reason", "string"),
     ("`action_code`", "int", "action_code", "int"),
     ("`http_request_id`", "string", "http_request_id", "string"),
-    ("`reason`", "string", "reason", "string"),
     ("`links.linksMap.self`", "string", "links_self", "string")], transformation_ctx = "df_obj_mapped")
 
 # If there are any ambiguous data types, "make_cols" will create new columns for them eg fieldname_date or _string
